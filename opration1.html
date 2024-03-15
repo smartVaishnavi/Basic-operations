@@ -1,0 +1,76 @@
+
+<html>
+<head>
+	<title></title>
+
+<!doctype html>
+<html>
+<head>
+	<style>
+ .container{
+	align-items: center;
+	margin-top: 100px;
+	padding-top: 30px;
+
+}
+ 
+h1::hover{ color: red;
+
+}
+
+		</style>
+<script>
+var numOne, numTwo, res, temp;
+function fun()
+{
+  numOne = parseInt(document.getElementById("one").value);
+  numTwo = parseInt(document.getElementById("two").value);
+  if(numOne && numTwo)
+  {
+    temp = document.getElementById("res");
+    temp.style.display = "block";
+    res = numOne + numTwo;
+    document.getElementById("add").value = res;
+
+    res = numOne - numTwo;
+    document.getElementById("subtract").value = res;
+    res = numOne * numTwo;
+    document.getElementById("multiply").value = res;
+    res = numOne / numTwo;
+    document.getElementById("divide").value = res;
+  }}
+
+</script>
+</head>
+<center>
+
+<body style="background-color:#262a53;
+border-style: double;"><h1 style="color:#ffa0a0;
+font-family:Brush Script MT; text-align: center; padding-top: 50px;"> BASIC OPRATION</h1>
+<table>
+
+<div class="container" style="width:68%;
+height: 82%; 
+border-style: double; background-color: #ffa0a0;;
+ margin-top:0px; padding-top:0px
+">
+<div class="container1" style="background-color:#ffe3e3 ;
+ width: 85%; margin-top:0px; padding-top:0px;height: 90%;
+
+ ">
+
+<p id="input" style="font-size: 23px; color: black; padding-top: 40px; ">Enter First Number: <input id="one" style="width:120px;">
+<br/><br/>
+Enter Second Number: <input id="two" style="width:120px;"></p>
+<P><button onclick="fun()"  style="background-color:indianred; font-size:18px">Result</button>
+</p>
+<p id="res" style="font-size: 23px; ">
+Addition(+)Result = <input id="add" style="width:120px;"><br/><br/>
+Subtraction(-) Result = <input id="subtract" style="width:120px;"><br/><br/>
+Multiplication(*)Result = <input id="multiply" style="width:120px;"><br/><br/>
+Division(/)Result  = <input id="divide" style="width:120px;"></div>
+</div>
+</table>
+</body>
+</center>
+</html>
